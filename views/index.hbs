@@ -1,0 +1,22 @@
+<h1 class="name-page">Restaurant</h1><br>
+<br>
+<div class="container">
+    <div class="row">
+        {{#each myData}}
+            <div class="col-3">
+                <div class="layout-card">
+                    <div class="card-overzone">
+                    <center>
+                        <img src="{{this.img}}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.name}}</h5>
+                            <p class="card-text">{{this.category}}</p>
+                        </div>
+                    </center>
+                     </div>
+                </div><br>
+            </div>
+            
+        {{/each}}
+    </div>
+</div>
